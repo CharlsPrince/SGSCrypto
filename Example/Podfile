@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SGSCrypto_Example' do
+  pod 'SGSCrypto', :path => '../'
+
+  target 'SGSCrypto_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

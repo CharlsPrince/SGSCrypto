@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024B9DA6ABC50626D8A010235DF2E0A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		049EE329E2867A9087ED1B2B27780939 /* NSString+SGSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0652B3BF50B935745F107EBE17ECB0 /* NSString+SGSHash.m */; };
+		0909F20A6FF837A7593A9D65DBF873C4 /* SGSRSACryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B7E05CDB96202610CFD3B21B9E80E9 /* SGSRSACryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D8495475E5AC13C56C2D9BA4526FCE /* NSData+SGSCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDA667FDDBBD3157825CF714CA92579 /* NSData+SGSCipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F57792EF6161CEE3313C3808513C3D7 /* Pods-SGSCrypto_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 176BACC1C68F1FC687FB88A9FB01A14E /* Pods-SGSCrypto_Tests-dummy.m */; };
+		13EE1998F93FD70EAE3F30046F1A316D /* SGSCrypto-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F17F7175678564E1B5971F19FA259448 /* SGSCrypto-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		286490B06C59F61B14885E1D13AD4452 /* SGSRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5AE2B905120683F416D125FA52CD85 /* SGSRSACryptor.m */; };
+		2B890583ADA88A5D94CE4499C690BBC5 /* NSData+SGSHMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = B1BDD231B10A42FBEDC3EA606AF905F7 /* NSData+SGSHMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C6DA277E54CFEA71265D70F50143B14 /* NSString+SGSCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DB63DE0AFBBCFA6675D3EC0CA3820B /* NSString+SGSCipher.m */; };
+		3BE27EB22ED52E5847E1D4D1919DFC54 /* Pods-SGSCrypto_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92859DD32DE67B5CEE2DD7A8D73915C8 /* Pods-SGSCrypto_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51D3B9FF753C865F64C48CBFA45D8230 /* NSData+SGSHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 2657EF689B9CFD9AF8D6CBE9A42691AE /* NSData+SGSHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B310E7AEAEA25696873300E04885E9D /* NSString+SGSHMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FBCEF0ECE5AEF45813C3270FDE5172 /* NSString+SGSHMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E9DCE05523FA46EF56DFE584A0B53A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6F86228A2034FF9A41D90BB7FD79018C /* NSString+SGSHash.h in Headers */ = {isa = PBXBuildFile; fileRef = F3D8DAFD8C11706128E35CEE4840780B /* NSString+SGSHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DC39E06F97159A764A6D47087DB23BC /* SGSCrypto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1B8DCC431880A06198F738E5D8071 /* SGSCrypto-dummy.m */; };
+		848729723436BF25011D8F18234E40BE /* NSData+SGSCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = A131FA4F91921213529B7418E1E535E3 /* NSData+SGSCipher.m */; };
+		8C908FDF1A5E1E08CD09DBD4A18DA84E /* Pods-SGSCrypto_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AED2EA54BE7CF900C97E76539722219 /* Pods-SGSCrypto_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A32A583958A9794FFAA29A4D18F2BCD /* NSString+SGSCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F459106F55C2FE4C8AEAF497522485D /* NSString+SGSCipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B17EE468E8C439A50763E78EB24F2EAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B48FA3DF6687DF717172CCEE500B48ED /* NSData+SGSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F28291F102345A9FE68ADF63B5E3D04 /* NSData+SGSHash.m */; };
+		DCE2920C9273C81497D5560BA460F835 /* Pods-SGSCrypto_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56139F47F30BD456C80F91EE2804D11C /* Pods-SGSCrypto_Example-dummy.m */; };
+		E64BED2B6D29A5BDBBAC8D0685395A48 /* NSData+SGSHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D542A16D0AC1A3726AA26CE60FFFA /* NSData+SGSHMAC.m */; };
+		E68EF35A7C32BD2B323086378D11BB1A /* NSString+SGSHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E02730142885DCA83F63E40B86BF94 /* NSString+SGSHMAC.m */; };
+		FA1C57696E9B128B6D1E6DFFA83948FB /* SGSCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2ECBFC3D19E81A783E248E4120BD00 /* SGSCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		834C29701E7D26346E5577302CCFBC3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBE47D7A76AFFE7E621CB70C4ACB8EF9;
+			remoteInfo = SGSCrypto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02152F0E6BC36782A8810D2BDB98E0E3 /* Pods-SGSCrypto_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGSCrypto_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		02E75F2ACCB16894F92B884DCB04894F /* Pods-SGSCrypto_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SGSCrypto_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0B3B1C8C43E3A020182C6DDAC37B4536 /* Pods_SGSCrypto_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SGSCrypto_Tests.framework; path = "Pods-SGSCrypto_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F28291F102345A9FE68ADF63B5E3D04 /* NSData+SGSHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+SGSHash.m"; sourceTree = "<group>"; };
+		0F459106F55C2FE4C8AEAF497522485D /* NSString+SGSCipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+SGSCipher.h"; sourceTree = "<group>"; };
+		176BACC1C68F1FC687FB88A9FB01A14E /* Pods-SGSCrypto_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SGSCrypto_Tests-dummy.m"; sourceTree = "<group>"; };
+		1967075F48F6119FF6C053034FE46C92 /* SGSCrypto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SGSCrypto.modulemap; sourceTree = "<group>"; };
+		2657EF689B9CFD9AF8D6CBE9A42691AE /* NSData+SGSHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+SGSHash.h"; sourceTree = "<group>"; };
+		28E0A3D5378F3751A9A237D47CE27204 /* Pods-SGSCrypto_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SGSCrypto_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F5AE2B905120683F416D125FA52CD85 /* SGSRSACryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGSRSACryptor.m; sourceTree = "<group>"; };
+		3B0652B3BF50B935745F107EBE17ECB0 /* NSString+SGSHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+SGSHash.m"; sourceTree = "<group>"; };
+		51DB63DE0AFBBCFA6675D3EC0CA3820B /* NSString+SGSCipher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+SGSCipher.m"; sourceTree = "<group>"; };
+		56139F47F30BD456C80F91EE2804D11C /* Pods-SGSCrypto_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SGSCrypto_Example-dummy.m"; sourceTree = "<group>"; };
+		64E00DFED2114A0606FF0C5016CD9F49 /* Pods-SGSCrypto_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGSCrypto_Example-resources.sh"; sourceTree = "<group>"; };
+		66A3FA406A375DB8B2809E73AF446C37 /* Pods-SGSCrypto_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SGSCrypto_Example.modulemap"; sourceTree = "<group>"; };
+		6D555CC72CF93ABF1001141836FD71E4 /* SGSCrypto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGSCrypto-prefix.pch"; sourceTree = "<group>"; };
+		6E9D542A16D0AC1A3726AA26CE60FFFA /* NSData+SGSHMAC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+SGSHMAC.m"; sourceTree = "<group>"; };
+		7016F9A34F7BCA4A813FD942A4FA839D /* Pods-SGSCrypto_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SGSCrypto_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7328D67238365A092C6C93296BE0ECDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847E80981B0845D459198E6AB5C1F29E /* Pods-SGSCrypto_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SGSCrypto_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		885B49C2C2B2A9CA74DB283DB8FFB756 /* SGSCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SGSCrypto.framework; path = SGSCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92859DD32DE67B5CEE2DD7A8D73915C8 /* Pods-SGSCrypto_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SGSCrypto_Tests-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		998E3D5133C08DA848482D92E521FFDE /* Pods-SGSCrypto_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGSCrypto_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9AED2EA54BE7CF900C97E76539722219 /* Pods-SGSCrypto_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SGSCrypto_Example-umbrella.h"; sourceTree = "<group>"; };
+		9DB2642F0F74F4812E74F18CF6081A19 /* Pods-SGSCrypto_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGSCrypto_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9EE1B8DCC431880A06198F738E5D8071 /* SGSCrypto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SGSCrypto-dummy.m"; sourceTree = "<group>"; };
+		A131FA4F91921213529B7418E1E535E3 /* NSData+SGSCipher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+SGSCipher.m"; sourceTree = "<group>"; };
+		ACDA667FDDBBD3157825CF714CA92579 /* NSData+SGSCipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+SGSCipher.h"; sourceTree = "<group>"; };
+		B041C1E0BFECE89F32996672A2CCA1FB /* Pods-SGSCrypto_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGSCrypto_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B07AA7A5F072EE85B882DDA5214E9907 /* Pods-SGSCrypto_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SGSCrypto_Tests.modulemap"; sourceTree = "<group>"; };
+		B1BDD231B10A42FBEDC3EA606AF905F7 /* NSData+SGSHMAC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+SGSHMAC.h"; sourceTree = "<group>"; };
+		B4787DF636D69AADC9B6707279C21787 /* Pods_SGSCrypto_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SGSCrypto_Example.framework; path = "Pods-SGSCrypto_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D97BDD1B9D9361A97FA1FE2564C340 /* Pods-SGSCrypto_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGSCrypto_Tests-resources.sh"; sourceTree = "<group>"; };
+		BD2B982DEB28627DE04F5A7FB9A21C17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD4A6B2DC1AF503D16CA24D4D41EC0F5 /* SGSCrypto.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SGSCrypto.xcconfig; sourceTree = "<group>"; };
+		BF4383B99B909E527127CC1E8AD462A0 /* Pods-SGSCrypto_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGSCrypto_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C6E02730142885DCA83F63E40B86BF94 /* NSString+SGSHMAC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+SGSHMAC.m"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC2ECBFC3D19E81A783E248E4120BD00 /* SGSCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGSCrypto.h; sourceTree = "<group>"; };
+		D3E67489D2337FB70DF20B350C5C4B84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B7E05CDB96202610CFD3B21B9E80E9 /* SGSRSACryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGSRSACryptor.h; sourceTree = "<group>"; };
+		E85E0FDA9857F4E5087D4FEE13853A7D /* Pods-SGSCrypto_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGSCrypto_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E8FBCEF0ECE5AEF45813C3270FDE5172 /* NSString+SGSHMAC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+SGSHMAC.h"; sourceTree = "<group>"; };
+		F17F7175678564E1B5971F19FA259448 /* SGSCrypto-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGSCrypto-umbrella.h"; sourceTree = "<group>"; };
+		F3D8DAFD8C11706128E35CEE4840780B /* NSString+SGSHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+SGSHash.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EC19470AB5731D7E94C621A9764B4D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17EE468E8C439A50763E78EB24F2EAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F14B47298138FAC1C0AE07446B32AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024B9DA6ABC50626D8A010235DF2E0A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53DF4EF68E4D86BB0FBB6F957AA912F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9DCE05523FA46EF56DFE584A0B53A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010358C63092EE90E497A99F9CF4D076 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				7CA71A63A80A215220F1EF41E64F5CB8 /* SGSCrypto */,
+			);
+			name = RSA;
+			sourceTree = "<group>";
+		};
+		0974886A751CF8B8E4C04F7A6E018D7B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CC2ECBFC3D19E81A783E248E4120BD00 /* SGSCrypto.h */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1E079B1F95885720258758CDE4520DEF /* HMAC */ = {
+			isa = PBXGroup;
+			children = (
+				F9C0FA09148B24D0400D10F00224F021 /* SGSCrypto */,
+			);
+			name = HMAC;
+			sourceTree = "<group>";
+		};
+		1FF67050EB569F5CDC72EE8B8412EB0E /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				87256AC7758A3B72D57EC68C133B5C9C /* SGSCrypto */,
+			);
+			name = Hash;
+			sourceTree = "<group>";
+		};
+		212B07E6CD0351E475A31D7B27385019 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D8B7E05CDB96202610CFD3B21B9E80E9 /* SGSRSACryptor.h */,
+				2F5AE2B905120683F416D125FA52CD85 /* SGSRSACryptor.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3551D73994D5CAF9E812A7EF986687C5 /* Pods-SGSCrypto_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7328D67238365A092C6C93296BE0ECDA /* Info.plist */,
+				66A3FA406A375DB8B2809E73AF446C37 /* Pods-SGSCrypto_Example.modulemap */,
+				847E80981B0845D459198E6AB5C1F29E /* Pods-SGSCrypto_Example-acknowledgements.markdown */,
+				7016F9A34F7BCA4A813FD942A4FA839D /* Pods-SGSCrypto_Example-acknowledgements.plist */,
+				56139F47F30BD456C80F91EE2804D11C /* Pods-SGSCrypto_Example-dummy.m */,
+				BF4383B99B909E527127CC1E8AD462A0 /* Pods-SGSCrypto_Example-frameworks.sh */,
+				64E00DFED2114A0606FF0C5016CD9F49 /* Pods-SGSCrypto_Example-resources.sh */,
+				9AED2EA54BE7CF900C97E76539722219 /* Pods-SGSCrypto_Example-umbrella.h */,
+				998E3D5133C08DA848482D92E521FFDE /* Pods-SGSCrypto_Example.debug.xcconfig */,
+				9DB2642F0F74F4812E74F18CF6081A19 /* Pods-SGSCrypto_Example.release.xcconfig */,
+			);
+			name = "Pods-SGSCrypto_Example";
+			path = "Target Support Files/Pods-SGSCrypto_Example";
+			sourceTree = "<group>";
+		};
+		3E2B6EF0D116AE8A927CF2907305D98A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2657EF689B9CFD9AF8D6CBE9A42691AE /* NSData+SGSHash.h */,
+				0F28291F102345A9FE68ADF63B5E3D04 /* NSData+SGSHash.m */,
+				F3D8DAFD8C11706128E35CEE4840780B /* NSString+SGSHash.h */,
+				3B0652B3BF50B935745F107EBE17ECB0 /* NSString+SGSHash.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5DB935759923BBC085CB969D1E75B830 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA667FDDBBD3157825CF714CA92579 /* NSData+SGSCipher.h */,
+				A131FA4F91921213529B7418E1E535E3 /* NSData+SGSCipher.m */,
+				0F459106F55C2FE4C8AEAF497522485D /* NSString+SGSCipher.h */,
+				51DB63DE0AFBBCFA6675D3EC0CA3820B /* NSString+SGSCipher.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7CA71A63A80A215220F1EF41E64F5CB8 /* SGSCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				212B07E6CD0351E475A31D7B27385019 /* Classes */,
+			);
+			name = SGSCrypto;
+			path = SGSCrypto;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8D84C16A2E5B8FB9AD5BF47A3F34CD9B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				80653365D4CAB9A7BE009090749086A6 /* Products */,
+				D21D0A8C87DF8DF365381E24CD660B7B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80653365D4CAB9A7BE009090749086A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4787DF636D69AADC9B6707279C21787 /* Pods_SGSCrypto_Example.framework */,
+				0B3B1C8C43E3A020182C6DDAC37B4536 /* Pods_SGSCrypto_Tests.framework */,
+				885B49C2C2B2A9CA74DB283DB8FFB756 /* SGSCrypto.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87256AC7758A3B72D57EC68C133B5C9C /* SGSCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				3E2B6EF0D116AE8A927CF2907305D98A /* Classes */,
+			);
+			name = SGSCrypto;
+			path = SGSCrypto;
+			sourceTree = "<group>";
+		};
+		8D84C16A2E5B8FB9AD5BF47A3F34CD9B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8AD27FCB76055E9AC426F71BB99DEF2 /* SGSCrypto */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		931E6124844A4C1DC6B0B7A3D9F848DE /* SGSCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				0974886A751CF8B8E4C04F7A6E018D7B /* Classes */,
+			);
+			name = SGSCrypto;
+			path = SGSCrypto;
+			sourceTree = "<group>";
+		};
+		A73CB75CF7CE1B065F6A27435A4847D2 /* Pods-SGSCrypto_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BD2B982DEB28627DE04F5A7FB9A21C17 /* Info.plist */,
+				B07AA7A5F072EE85B882DDA5214E9907 /* Pods-SGSCrypto_Tests.modulemap */,
+				02E75F2ACCB16894F92B884DCB04894F /* Pods-SGSCrypto_Tests-acknowledgements.markdown */,
+				28E0A3D5378F3751A9A237D47CE27204 /* Pods-SGSCrypto_Tests-acknowledgements.plist */,
+				176BACC1C68F1FC687FB88A9FB01A14E /* Pods-SGSCrypto_Tests-dummy.m */,
+				E85E0FDA9857F4E5087D4FEE13853A7D /* Pods-SGSCrypto_Tests-frameworks.sh */,
+				B4D97BDD1B9D9361A97FA1FE2564C340 /* Pods-SGSCrypto_Tests-resources.sh */,
+				92859DD32DE67B5CEE2DD7A8D73915C8 /* Pods-SGSCrypto_Tests-umbrella.h */,
+				B041C1E0BFECE89F32996672A2CCA1FB /* Pods-SGSCrypto_Tests.debug.xcconfig */,
+				02152F0E6BC36782A8810D2BDB98E0E3 /* Pods-SGSCrypto_Tests.release.xcconfig */,
+			);
+			name = "Pods-SGSCrypto_Tests";
+			path = "Target Support Files/Pods-SGSCrypto_Tests";
+			sourceTree = "<group>";
+		};
+		AC4FAB0C2101D2E3ED34813C2C7B6F44 /* AESAndDES */ = {
+			isa = PBXGroup;
+			children = (
+				F0C7D09EDB5971A2A664CBFB35182DD6 /* SGSCrypto */,
+			);
+			name = AESAndDES;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA82E3DC51A2CDAC58B0F3AFD18CB9EA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B1BDD231B10A42FBEDC3EA606AF905F7 /* NSData+SGSHMAC.h */,
+				6E9D542A16D0AC1A3726AA26CE60FFFA /* NSData+SGSHMAC.m */,
+				E8FBCEF0ECE5AEF45813C3270FDE5172 /* NSString+SGSHMAC.h */,
+				C6E02730142885DCA83F63E40B86BF94 /* NSString+SGSHMAC.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D21D0A8C87DF8DF365381E24CD660B7B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3551D73994D5CAF9E812A7EF986687C5 /* Pods-SGSCrypto_Example */,
+				A73CB75CF7CE1B065F6A27435A4847D2 /* Pods-SGSCrypto_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D8AD27FCB76055E9AC426F71BB99DEF2 /* SGSCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				AC4FAB0C2101D2E3ED34813C2C7B6F44 /* AESAndDES */,
+				1FF67050EB569F5CDC72EE8B8412EB0E /* Hash */,
+				1E079B1F95885720258758CDE4520DEF /* HMAC */,
+				010358C63092EE90E497A99F9CF4D076 /* RSA */,
+				931E6124844A4C1DC6B0B7A3D9F848DE /* SGSCrypto */,
+				FCEB6998FC5E03E049768C7F74B1D6BF /* Support Files */,
+			);
+			name = SGSCrypto;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F0C7D09EDB5971A2A664CBFB35182DD6 /* SGSCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				5DB935759923BBC085CB969D1E75B830 /* Classes */,
+			);
+			name = SGSCrypto;
+			path = SGSCrypto;
+			sourceTree = "<group>";
+		};
+		F9C0FA09148B24D0400D10F00224F021 /* SGSCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				CA82E3DC51A2CDAC58B0F3AFD18CB9EA /* Classes */,
+			);
+			name = SGSCrypto;
+			path = SGSCrypto;
+			sourceTree = "<group>";
+		};
+		FCEB6998FC5E03E049768C7F74B1D6BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3E67489D2337FB70DF20B350C5C4B84 /* Info.plist */,
+				1967075F48F6119FF6C053034FE46C92 /* SGSCrypto.modulemap */,
+				BD4A6B2DC1AF503D16CA24D4D41EC0F5 /* SGSCrypto.xcconfig */,
+				9EE1B8DCC431880A06198F738E5D8071 /* SGSCrypto-dummy.m */,
+				6D555CC72CF93ABF1001141836FD71E4 /* SGSCrypto-prefix.pch */,
+				F17F7175678564E1B5971F19FA259448 /* SGSCrypto-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SGSCrypto";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		871093E978454956E2D743BA5D7BFEBC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C908FDF1A5E1E08CD09DBD4A18DA84E /* Pods-SGSCrypto_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E6553B647C9DA317EEFE09FA5B67F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE27EB22ED52E5847E1D4D1919DFC54 /* Pods-SGSCrypto_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B2161DD63E1DC0F23EB69F024F4262 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D8495475E5AC13C56C2D9BA4526FCE /* NSData+SGSCipher.h in Headers */,
+				51D3B9FF753C865F64C48CBFA45D8230 /* NSData+SGSHash.h in Headers */,
+				2B890583ADA88A5D94CE4499C690BBC5 /* NSData+SGSHMAC.h in Headers */,
+				9A32A583958A9794FFAA29A4D18F2BCD /* NSString+SGSCipher.h in Headers */,
+				6F86228A2034FF9A41D90BB7FD79018C /* NSString+SGSHash.h in Headers */,
+				5B310E7AEAEA25696873300E04885E9D /* NSString+SGSHMAC.h in Headers */,
+				13EE1998F93FD70EAE3F30046F1A316D /* SGSCrypto-umbrella.h in Headers */,
+				FA1C57696E9B128B6D1E6DFFA83948FB /* SGSCrypto.h in Headers */,
+				0909F20A6FF837A7593A9D65DBF873C4 /* SGSRSACryptor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B08FEC00E063993A602C930F49EA5B18 /* Pods-SGSCrypto_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C36964111BA9411AAE68BFD1FE1B771 /* Build configuration list for PBXNativeTarget "Pods-SGSCrypto_Tests" */;
+			buildPhases = (
+				86E19EC82324848E8B589D493B0511F1 /* Sources */,
+				E53DF4EF68E4D86BB0FBB6F957AA912F /* Frameworks */,
+				B4E6553B647C9DA317EEFE09FA5B67F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SGSCrypto_Tests";
+			productName = "Pods-SGSCrypto_Tests";
+			productReference = 0B3B1C8C43E3A020182C6DDAC37B4536 /* Pods_SGSCrypto_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6B773F7D6748CF55354C38424DD359D /* Pods-SGSCrypto_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FC522D1CBEC110D000CC8F92D1B215D /* Build configuration list for PBXNativeTarget "Pods-SGSCrypto_Example" */;
+			buildPhases = (
+				5120F7CC68C305AF1B0DE96A0D82377E /* Sources */,
+				3EC19470AB5731D7E94C621A9764B4D6 /* Frameworks */,
+				871093E978454956E2D743BA5D7BFEBC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63FDD2CFBADB18DA68BC7DD232B7BD37 /* PBXTargetDependency */,
+			);
+			name = "Pods-SGSCrypto_Example";
+			productName = "Pods-SGSCrypto_Example";
+			productReference = B4787DF636D69AADC9B6707279C21787 /* Pods_SGSCrypto_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBE47D7A76AFFE7E621CB70C4ACB8EF9 /* SGSCrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA76D0C499768EB95F7067CB2734153 /* Build configuration list for PBXNativeTarget "SGSCrypto" */;
+			buildPhases = (
+				BCD0A2EF13E53D86C82E1865BD1E3EAE /* Sources */,
+				5F14B47298138FAC1C0AE07446B32AD8 /* Frameworks */,
+				E3B2161DD63E1DC0F23EB69F024F4262 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SGSCrypto;
+			productName = SGSCrypto;
+			productReference = 885B49C2C2B2A9CA74DB283DB8FFB756 /* SGSCrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 80653365D4CAB9A7BE009090749086A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6B773F7D6748CF55354C38424DD359D /* Pods-SGSCrypto_Example */,
+				B08FEC00E063993A602C930F49EA5B18 /* Pods-SGSCrypto_Tests */,
+				CBE47D7A76AFFE7E621CB70C4ACB8EF9 /* SGSCrypto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5120F7CC68C305AF1B0DE96A0D82377E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE2920C9273C81497D5560BA460F835 /* Pods-SGSCrypto_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86E19EC82324848E8B589D493B0511F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F57792EF6161CEE3313C3808513C3D7 /* Pods-SGSCrypto_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD0A2EF13E53D86C82E1865BD1E3EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848729723436BF25011D8F18234E40BE /* NSData+SGSCipher.m in Sources */,
+				B48FA3DF6687DF717172CCEE500B48ED /* NSData+SGSHash.m in Sources */,
+				E64BED2B6D29A5BDBBAC8D0685395A48 /* NSData+SGSHMAC.m in Sources */,
+				2C6DA277E54CFEA71265D70F50143B14 /* NSString+SGSCipher.m in Sources */,
+				049EE329E2867A9087ED1B2B27780939 /* NSString+SGSHash.m in Sources */,
+				E68EF35A7C32BD2B323086378D11BB1A /* NSString+SGSHMAC.m in Sources */,
+				7DC39E06F97159A764A6D47087DB23BC /* SGSCrypto-dummy.m in Sources */,
+				286490B06C59F61B14885E1D13AD4452 /* SGSRSACryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63FDD2CFBADB18DA68BC7DD232B7BD37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SGSCrypto;
+			target = CBE47D7A76AFFE7E621CB70C4ACB8EF9 /* SGSCrypto */;
+			targetProxy = 834C29701E7D26346E5577302CCFBC3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8790219E7DBD612B601FD4AD0D4C7B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4A6B2DC1AF503D16CA24D4D41EC0F5 /* SGSCrypto.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SGSCrypto/SGSCrypto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SGSCrypto/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SGSCrypto/SGSCrypto.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SGSCrypto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96232996DEC8C3ECF8651F5ED335211F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B041C1E0BFECE89F32996672A2CCA1FB /* Pods-SGSCrypto_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGSCrypto_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGSCrypto_Tests/Pods-SGSCrypto_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGSCrypto_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9EFE9BF79E7F762556AF639E88E7A681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 998E3D5133C08DA848482D92E521FFDE /* Pods-SGSCrypto_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGSCrypto_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGSCrypto_Example/Pods-SGSCrypto_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGSCrypto_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9C91B436AE0E8AAD2E58FDFCED6FC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02152F0E6BC36782A8810D2BDB98E0E3 /* Pods-SGSCrypto_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGSCrypto_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGSCrypto_Tests/Pods-SGSCrypto_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGSCrypto_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6CD3B90BA187FBA4C15FB512688F1E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4A6B2DC1AF503D16CA24D4D41EC0F5 /* SGSCrypto.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SGSCrypto/SGSCrypto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SGSCrypto/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SGSCrypto/SGSCrypto.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SGSCrypto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DBBA6588CCF3A79CB4682836EFFFE228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB2642F0F74F4812E74F18CF6081A19 /* Pods-SGSCrypto_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGSCrypto_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGSCrypto_Example/Pods-SGSCrypto_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGSCrypto_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C36964111BA9411AAE68BFD1FE1B771 /* Build configuration list for PBXNativeTarget "Pods-SGSCrypto_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96232996DEC8C3ECF8651F5ED335211F /* Debug */,
+				A9C91B436AE0E8AAD2E58FDFCED6FC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA76D0C499768EB95F7067CB2734153 /* Build configuration list for PBXNativeTarget "SGSCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8790219E7DBD612B601FD4AD0D4C7B93 /* Debug */,
+				B6CD3B90BA187FBA4C15FB512688F1E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FC522D1CBEC110D000CC8F92D1B215D /* Build configuration list for PBXNativeTarget "Pods-SGSCrypto_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFE9BF79E7F762556AF639E88E7A681 /* Debug */,
+				DBBA6588CCF3A79CB4682836EFFFE228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

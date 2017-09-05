@@ -1,0 +1,61 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    @import UIKit;
+    @import Foundation;
+
+
+static inline NSString *hexStringWithData(NSData *data) {
+    if (data.length == 0) return @"";
+    
+    const void *bytes = data.bytes;
+    NSUInteger length = data.length;
+    
+    NSMutableString *result = [[NSMutableString alloc] initWithCapacity:length * 2];
+    for (size_t i = 0; i < length; i++) {
+        [result appendFormat:@"%02x", ((const uint8_t *) bytes)[i]];
+    }
+    return result.copy;
+}
+
+static inline NSData *dataWithHexString(NSString *hexString) {
+    NSMutableData *result = nil;
+    NSUInteger length = hexString.length;
+    
+    if ((length % 2) == 0) {
+        result = [[NSMutableData alloc] init];
+        NSUInteger index = 0;
+        
+        while (index != length) {
+            unsigned int    thisUInt;
+            uint8_t         thisByte;
+            
+            if (sscanf([[hexString substringWithRange:NSMakeRange(index, 2)] UTF8String], "%x", &thisUInt) != 1 ) {
+                result = nil;
+                break;
+            }
+            thisByte = (uint8_t) thisUInt;
+            [result appendBytes:&thisByte length:sizeof(thisByte)];
+            index += 2;
+        }
+    }
+    
+    return result;
+}
+
+static inline void showAlert(NSString *title, NSString *message, UIViewController *presentingVC) {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil]];
+    [presentingVC presentViewController:alert animated:YES completion:nil];
+}
+#endif

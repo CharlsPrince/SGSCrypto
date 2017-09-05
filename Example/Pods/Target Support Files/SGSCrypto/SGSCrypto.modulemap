@@ -1,0 +1,6 @@
+framework module SGSCrypto {
+  umbrella header "SGSCrypto-umbrella.h"
+
+  export *
+  module * { export * }
+}
